@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salem Baghoth | Business Card</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- <div class="bg-glow"></div> -->
+    
+    <div class="container">
+        
+        <div class="card-wrapper" id="cardWrapper">
+            <!-- FRONT SIDE -->
+            
+            <div class="face front">
+
+                <div class="avatar-container">
+                    <!-- The generated avatar image -->
+                    <img src="personal.png" alt="Salem Baghoth" class="avatar"> -->
+                </div>
+                
+                <h1 class="name">SALEM  BAGHOTH</h1>
+                <p class="role">Software Engineer • CS Student</p>
+                
+                <p class="desc">
+                    Crafting secure, scalable, and elegant digital solutions. 
+                    Specialized in backend systems and cybersecurity.
+                </p>
+                
+                <div class="links">
+                    <a href="https://linkedin.com/in/salem-baghoth-800887271" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/salem83-Dev/profile-file" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:salembagh131@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- BACK SIDE -->
+            <div class="face back">
+                
+                <div class="section-title">
+                    <i class="fas fa-circle"></i> Expertise & Philosophy
+                </div>
+                <p class="info-text">
+          Building secure, scalable systems with clean and efficient architecture.      </p>
+                
+                <div class="section-title">
+                    <i class="fas fa-circle"></i> Tech Stack
+                </div>
+                <div class="tags-grid">
+                    <span class="tag">C++</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">OOP</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Linux</span>
+                    <span class="tag">Git&Github</span>
+                    <span class="tag">Visual Studio</span>
+                </div>
+                
+                <div class="section-title">
+                    <i class="fas fa-circle"></i>Let’s connect
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>|  salembagh131@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>|  salem83-Dev</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>|  Salem Baghoth</span>
+                </div>
+            </div>
+        </div>
+            <button class="flip-btn" onclick="flipCard()">
+                <i class="fas fa-sync-alt"></i> Flip Card
+            </button>
+    </div>  
+    
+    
+    <script>
+        
+        function flipCard() {
+            const card = document.getElementById("cardWrapper");
+            card.classList.toggle("flipped");
+        }
+        
+        </script>
+</body>
